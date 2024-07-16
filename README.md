@@ -1,5 +1,9 @@
 # SQL Assignments :rose:
 
+This project assignment has been prepared for the 'Kodluyoruz' SQL course. It includes sql assignments
+
+
+
 
 ## Assignment 1: 
 
