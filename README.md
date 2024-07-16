@@ -36,3 +36,20 @@ SELECT first_name, last_name FROM actor WHERE first_name IN ('Penelope','Nick','
 SELECT * FROM film WHERE rental_rate IN (0.99,2.99,4.99) AND replacement_cost IN (12.99,15.99,28.99)
 
 ```
+
+---
+
+## Assignment 3:
+
+```sql
+
+SELECT * FROM country WHERE country LIKE 'A%a'
+
+SELECT * FROM country WHERE country LIKE '%n' AND LENGTH(country)>=6
+
+SELECT title FROM film WHERE title ILIKE '%t%t%t%t%'
+
+SELECT * FROM film WHERE title LIKE 'C%' AND length>90 AND rental_rate IN (2.99)
+
+
+```
