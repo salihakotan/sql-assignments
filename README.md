@@ -120,3 +120,27 @@ SELECT country_id,COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC 
 
 ---
 
+
+## Assignment 8:
+
+```sql
+
+CREATE TABLE employee(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	birthday DATE,
+	email VARCHAR(100)
+	
+)
+
+
+/* 50 rows with API Mocking tool https://www.mockaroo.com/ */
+insert into employee (name, birthday, email) values ('Frans', '2024-01-26', 'fcatterall0@topsy.com');
+insert into employee (name, birthday, email) values ('Lenora', '2023-11-27', 'lwoollard1@thetimes.co.uk');
+...
+
+UPDATE employee SET name='x', birthday='1990-10-09', email='xx@gmail.com' WHERE id=1 RETURNING *;
+
+DELETE FROM employee WHERE id=2
+
+```
