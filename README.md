@@ -53,3 +53,21 @@ SELECT * FROM film WHERE title LIKE 'C%' AND length>90 AND rental_rate IN (2.99)
 
 
 ```
+
+---
+
+## Assignment 4:
+
+```sql
+
+SELECT DISTINCT(replacement_cost) FROM film;
+	
+SELECT COUNT(DISTINCT(replacement_cost)) FROM film;
+
+SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating IN ('G');
+
+SELECT COUNT(*) FROM country WHERE LENGTH(country)=5;
+
+SELECT COUNT(*) FROM city WHERE city ILIKE '%r';
+
+```
