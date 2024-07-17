@@ -196,3 +196,18 @@ SELECT first_name,last_name,rental_id FROM customer FULL JOIN rental ON rental.c
 
 ---
 
+## Assignment 12:
+
+```sql
+
+SELECT COUNT(*) FROM film WHERE length> (SELECT AVG(length) from film)
+
+SELECT COUNT(*) FROM film WHERE rental_rate=(SELECT MAX(rental_rate) FROM film)
+
+SELECT * FROM film WHERE rental_rate=(SELECT MIN(rental_rate) from film) AND replacement_cost=(SELECT MIN(replacement_cost) from film)
+
+SELECT customer_id,COUNT(*) FROM payment GROUP BY customer_id ORDER BY COUNT(*) DESC;
+
+```
+
+---
