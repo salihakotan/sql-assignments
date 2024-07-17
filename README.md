@@ -144,3 +144,19 @@ UPDATE employee SET name='x', birthday='1990-10-09', email='xx@gmail.com' WHERE 
 DELETE FROM employee WHERE id=2
 
 ```
+
+---
+
+## Assignment 9:
+
+```sql
+
+SELECT city,country FROM city INNER JOIN country ON city.country_id=country.country_id
+
+SELECT first_name,last_name,payment_id FROM customer INNER JOIN payment ON customer.customer_id=payment.customer_id
+
+SELECT first_name,last_name,rental_id FROM customer INNER JOIN rental ON customer.customer_id=rental.customer_id
+
+```
+
+---
